@@ -1,0 +1,498 @@
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0;
+  line-height: 45px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: .75em;
+  text-align: right;
+  display: inline;
+  padding: 0 20px;
+}
+
+p {
+  font-size: .9em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header1 header2 header2 header2"auto "section1 section1 section1 section1"auto "curve curve curve curve"230px "section2 section2 section2 section2"auto "signup1 signup1 signup2 signup2"auto "footer0 footer0 footer0 footer0"auto "footer1 footer2 footer3 footer4"auto "footer5 footer5 footer5 footer5"auto / 400px 1fr 1fr 1fr;
+}
+
+.header1 {
+  grid-area: header1;
+}
+
+.header2 {
+  grid-area: header2;
+  text-align: right;
+}
+
+.section1 {
+  grid-area: section1;
+  padding: 0 60px;
+}
+
+.curve {
+  grid-area: curve;
+  margin-top: 130px;
+  background-image: url("../images/bg-curve-desktop.svg");
+}
+
+.section2 {
+  grid-area: section2;
+  background-color: hsl(240, 75%, 98%);
+  padding: 40px 60px 100px 60px;
+}
+
+.signup1 {
+  grid-area: signup1;
+}
+
+.signup2 {
+  grid-area: signup2;
+}
+
+.footer0 {
+  grid-area: footer0;
+}
+
+.footer1 {
+  grid-area: footer1;
+}
+
+.footer2 {
+  grid-area: footer2;
+}
+
+.footer3 {
+  grid-area: footer3;
+}
+
+.footer4 {
+  grid-area: footer4;
+}
+
+.footer5 {
+  grid-area: footer5;
+}
+
+.headers {
+  padding: 60px 60px 50px 60px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spacing {
+  width: 50px;
+}
+
+.pic1 {
+  width: 450px;
+}
+
+.input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input [type=email1] {
+  padding: 10px;
+  font-size: .7em;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(0, 0%, 75%);
+  margin: 0 10px 10px 0;
+  width: 85%;
+}
+
+::placeholder {
+  color: hsl(0, 0%, 75%)
+}
+
+.input [type=submit1] {
+  padding: 10px;
+  font-size: .7em;
+  background: hsl(224, 93%, 58%);
+  color: white;
+  border: 0 none;
+  border-radius: 3px;
+  text-align: center;
+  width: 40%;
+}
+
+.fyloworks {
+  color: hsl(170, 45%, 43%);
+  margin: 0 0 30px 0;
+  font-size: .8em;
+  display: inline-block;
+  border-bottom: solid;
+  border-color: hsl(170, 45%, 43%);
+  border-width: 1px;
+  text-align: center;
+}
+
+.arrow {
+  vertical-align: middle;
+}
+
+.quote {
+  width: 230px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px hsl(0, 0%, 75%);
+}
+
+.quote-quotes {
+  width: 12px;
+}
+
+.quote-words {
+  font-size: .7em;
+  margin-top: 5px;
+}
+
+.quote-avatar {
+  border-radius: 50%;
+  width: 25px;
+  margin-right: 5px;
+  float: left;
+}
+
+.quote-name {
+  font-size: .6em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.quote-title {
+  font-size: .5em;
+  margin: 0;
+}
+
+.logo {
+  width: 130px;
+}
+
+.pic2 {
+  width: 450px;
+}
+
+.signup {
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+}
+
+.signup1, .signup2 {
+  padding: 75px 60px;
+}
+
+.signup-content {
+  font-size: 1em;
+}
+
+.signup1 {
+  font-size: .8em;
+}
+
+.input [type=email2] {
+  padding: 10px;
+  font-size: .7em;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsl(0, 0%, 75%);
+  margin: 0 0 10px 0;
+  width: 90%;
+}
+
+.input [type=submit2] {
+  padding: 10px;
+  font-size: .7em;
+  background: hsl(224, 93%, 58%);
+  color: white;
+  border: 0 none;
+  border-radius: 3px;
+  text-align: center;
+  width: 40%;
+}
+
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  line-height: 50px;
+}
+
+.footer0 {
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+.footer1 {
+  padding-left: 60px;
+  line-height: 30px;
+}
+
+.footer4 {
+  padding-right: 60px;
+}
+
+.footer2, .footer3 {
+  line-height: 20px;
+}
+
+.footer-logo {
+  filter: brightness(0) invert(1);
+  width: 130px;
+}
+
+.footer-phone-icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.footer-phone {
+  font-size: .75em;
+  margin: 0;
+  display: inline-block;
+}
+
+.footer-email-icon {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.footer-email {
+  font-size: .75em;
+  margin: 0;
+  display: inline;
+}
+
+.footer2, .footer3 {
+  line-height: 20px;
+}
+
+.icons {
+  width: 20px;
+  filter: brightness(0) invert(1);
+  padding: 10px;
+}
+
+.footer5 {
+  padding: 0 60px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  color: white;
+}
+
+@media only screen and (max-width: 930px) {
+  h1 {
+    font-size: 2.5em;
+    line-height: 55px;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .headers {
+    padding: 30px 30px 150px 30px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template:
+      "header1 header2"auto "section1 section1"auto "curve curve"180px "section2 section2"auto "signup1 signup1"auto "signup2 signup2"auto "footer0 footer0"auto "footer1 footer1"auto "footer2 footer2"auto "footer3 footer3"auto "footer4 footer4"auto "footer5 footer5"auto / 25% 75%;
+  }
+
+  .sections {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pic1 {
+    padding-bottom: 75px;
+  }
+
+  .input [type=email1] {
+    padding: 20px;
+    font-size: 1.3em;
+    margin: 0 10px 10px 0;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 75%);
+  }
+
+  .input [type=submit1] {
+    padding: 20px;
+    font-size: 1.3em;
+    width: 90%
+  }
+
+  .input [type=email2] {
+    padding: 20px;
+    font-size: 1.3em;
+    margin: 0 10px 10px 0;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 75%);
+  }
+
+  .input [type=submit2] {
+    padding: 20px;
+    font-size: 1.3em;
+    width: 90%
+  }
+
+  .curve {
+    background-image: url("../images/bg-curve-mobile.svg");
+  }
+
+  .pic2 {
+    padding-bottom: 75px;
+  }
+
+  .section2 h1 {
+    font-size: 1.7em;
+  }
+
+  .fyloworks {
+    font-size: 1.25em;
+    border-width: 2px;
+    margin: auto;
+    justify-content: center;
+    width: 45%;
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    margin: auto;
+    width: 80%;
+    padding: 40px;
+  }
+
+  .quote-quotes {
+    width: 20px;
+  }
+
+  .quote-avatar {
+    width: 40px;
+  }
+
+  .quote-words, .quote-name, .quote-title {
+    text-align: left;
+  }
+
+  .quote-words {
+    font-size: 1.2em;
+  }
+
+  .quote-name {
+    display: inline;
+    font-size: 1em;
+  }
+
+  .quote-title {
+    display: block;
+    ;
+    font-size: .7em;
+  }
+
+  .signup-title {
+    padding-bottom: 0;
+  }
+
+  .signup-content {
+    font-size: 1.75em;
+    line-height: 30px;
+  }
+
+  .signup1 {
+    padding-bottom: 0;
+  }
+
+  .signup2 {
+    padding-top: 0;
+  }
+
+  .footer {
+    padding: 5px 30px;
+  }
+
+.footer0 {padding: 100px 0 40px 30px;}
+
+  .footer-logo {
+    filter: brightness(0) invert(1);
+    width: 250px;
+
+  }
+
+  .footer-phone-icon, .footer-email-icon {
+    width: 30px;
+    margin-right: 20px;
+  }
+
+  .footer-phone, .footer-email {
+    font-size: 1.5em;
+  }
+
+  .footer2 p, .footer3 p {
+    line-height: 15px;
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .footer2 {
+    padding-top: 40px;
+  }
+
+  .footer4 {
+    text-align: center;
+  }
+
+  .icons {
+    width: 40px;
+  }
+
+}
